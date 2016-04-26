@@ -111,7 +111,7 @@ def main():
 			nbc.getMaximumProb(nbc.predicted_data[key1],key1,f)
 		f.write("\nCorrect predictions= "+str(nbc.accuracy))
 		f.write("\nTotal data= "+str(nbc.test_data))
-		f.write("\nAccuracy of classification: {0:.2f}%".format(100 * float(nbc.accuracy)/float(nbc.test_data)))
+		f.write("\nAccuracy of classification: {:.2%}".format(float(nbc.accuracy)/float(nbc.test_data)))
 		print('Successfully generated result at: '+folder+'/result.dat')
 	return 0
 
